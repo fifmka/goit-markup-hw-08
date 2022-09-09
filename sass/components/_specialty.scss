@@ -1,0 +1,26 @@
+
+
+.spesialty__item {
+    width: 100%;
+}
+.spesialty__content {
+    width: 100%;
+    min-height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: $additionalBgColor;
+}
+.spesialty__title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+}
+.spesialty__text {
+    color: $paragraphColor;
+    line-height: 1.71;
+}
+
+

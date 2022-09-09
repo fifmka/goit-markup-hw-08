@@ -1,0 +1,36 @@
+.filter-list {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.filter-button {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
+    min-width: 73px;
+    border: none;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: $additionalBgColor;
+    color: $primaryTextColor;
+    font-weight: 500;
+    line-height: 1.63;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+   
+    &:hover,
+    &:focus {
+    color: $whiteTextColor;
+    background-color: $accentColor;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}}

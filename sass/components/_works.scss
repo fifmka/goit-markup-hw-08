@@ -1,0 +1,45 @@
+.works{
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
+.works {
+    @extend .section;
+    padding-top: 0;
+&__title {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+    }
+&__list {
+    
+    gap: 30px;
+    justify-content: center;
+}
+
+&__thumb {
+    position: relative;
+    width: 370px;
+
+}
+
+&__text {
+    position: absolute;
+    bottom: 0;
+    @extend %centeredFlex;
+    width: 100%;
+
+    min-height: 70px;
+    color: $whiteTextColor;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+&__photo{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+}

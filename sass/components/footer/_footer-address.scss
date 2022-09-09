@@ -1,0 +1,30 @@
+.address {
+    margin-right: 70px;
+
+&__link {
+    display: inline-block;
+    margin-bottom: 9px;
+
+    color: $whiteTextColor;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+}
+.address-details {
+    display: block;
+
+
+&__mail,
+&__tel {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71
+}
+
+&__mail {
+    display: inline-block;
+    margin-bottom: 9px;
+}
+}

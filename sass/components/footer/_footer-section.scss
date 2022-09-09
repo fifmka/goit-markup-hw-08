@@ -1,0 +1,12 @@
+.footer {
+    padding: 60px 215px;
+
+    background-color: $footerColor;
+
+&__contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+}
+

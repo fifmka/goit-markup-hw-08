@@ -1,0 +1,25 @@
+.logo {
+    @extend %logoBase;
+    // font-family: $logo, sans-serif;
+    // font-weight: 700;
+    // font-size: 26px;
+    // line-height: 1.2;
+    margin-right: 93px;
+    color: $accentColor;
+
+    &__accent{
+    @extend %logoBase;
+    color: $logoColor;}
+}
+
+.wrapper-logo {
+    margin-bottom: 20px;
+}
+.footer-logo{
+    @extend %logoBase;
+    margin-right: 0;
+&--accent {
+        color: $whiteTextColor;
+    }
+}
+
