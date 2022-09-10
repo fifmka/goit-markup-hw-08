@@ -1,7 +1,6 @@
-.address {
-    margin-right: 70px;
+.address {}
 
-&__link {
+.address__link {
     display: inline-block;
     margin-bottom: 9px;
 
@@ -10,21 +9,20 @@
     font-size: 14px;
     line-height: 1.71;
 }
-}
+
 .address-details {
     display: block;
+}
 
-
-&__mail,
-&__tel {
+.address-details__mail,
+.address-details__tel {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71
 }
 
-&__mail {
+.address-details__mail {
     display: inline-block;
     margin-bottom: 9px;
-}
 }

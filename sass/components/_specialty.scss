@@ -1,26 +1,35 @@
 
-
-.spesialty__item {
+// .specialty__list
+// .spesialty__item {
+//        margin-bottom: 30px;
+//     background-color: red;
+// }
+// .spesialty__content {
+//     display: block;
+    .spesialty__content {
+  display: block;
     width: 100%;
-}
-.spesialty__content {
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     min-height: 120px;
-    margin-bottom: 30px;
     border-radius: 4px;
-    background-color: $additionalBgColor;
-}
+    background-color: red;}
+    
 .spesialty__title {
+    display: block;
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    text-align: center;
 }
-.spesialty__text {
-    color: $paragraphColor;
-    line-height: 1.71;
-}
+// }
+// .spesialty__text {
+//     display: block;
+//     text-align: center;
+//     color: $paragraphColor;
+//     font-size: 25px;
+//     line-height: 1.71;
+// }
 
 

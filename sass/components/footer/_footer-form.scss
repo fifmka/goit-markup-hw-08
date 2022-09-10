@@ -1,9 +1,9 @@
 
 
 .footer-form {
-    margin-left: auto;
+    margin-left: auto;}
 
-&__title {
+.footer-form__title {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -12,11 +12,11 @@
 
     color: $whiteTextColor;
 }
-}
-.form-join {
-    display: flex;
 
-&__email {
+// .form-join {
+//     display: flex;}
+
+.form-join__email {
 
     min-width: 358px;
     min-height: 50px;
@@ -27,15 +27,13 @@
     border-radius: 4px;
     background-color: #2F303A;
     color: $whiteTextColor;
-}
-
-&__email::placeholder {
+    &::placeholder {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-}
-}
+    }}
+
 .sing-button {
     @extend %centeredFlex;
     gap: 10px;
