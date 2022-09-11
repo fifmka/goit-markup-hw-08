@@ -1,20 +1,40 @@
 .hero {
-    max-width: 480px;
-    height: 400px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 118px;
     padding-bottom: 118px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mob.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
 
 
     color: $whiteTextColor;
     text-align: center;
     background-color: $footerColor;
+@media (min-resolution: 2dppx) {
+    .hero {
+        background-image: url(/images/hero-mob2.jpg);
+    }}}
+@media (min-width: 481px) {
+ .hero {
+    background-image: url(/images/hero-tab.jpg);
+}
+   @media (min-resolution: 2dppx) {
+       .hero {
+           background-image: url(/images/hero-tab2.jpg);
+       }
+}
+}
+@media (min-width: 769px) {
+    .hero {
+        background-image: url(/images/hero-desc.jpg);
+    }
+
+    @media (min-resolution: 2dppx) {
+        .hero {
+            background-image: url(/images/hero-desc2.jpg);
+        }}}
     
-    &__title {
+    .hero__title {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
@@ -27,7 +47,7 @@
         text-transform: uppercase;
         }
     
-    &__button{
+    .hero__button{
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 10px;
@@ -49,4 +69,3 @@
     &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
     }
-}

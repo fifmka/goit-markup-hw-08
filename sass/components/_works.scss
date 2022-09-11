@@ -3,28 +3,25 @@
         display: none;
     }
 }
-.works {
-    @extend .section;
-    padding-top: 0;
-&__title {
+.works__title {
         margin-bottom: 50px;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
     }
-&__list {
+.works__list {
     
     gap: 30px;
     justify-content: center;
 }
 
-&__thumb {
+.works__thumb {
     position: relative;
     width: 370px;
 
 }
 
-&__text {
+.works__text {
     position: absolute;
     bottom: 0;
     @extend %centeredFlex;
@@ -37,9 +34,9 @@
     line-height: 1.14;
     text-transform: uppercase;
 }
-&__photo{
+.works__photo{
     display: block;
     max-width: 100%;
     height: auto;
     }
-}
+

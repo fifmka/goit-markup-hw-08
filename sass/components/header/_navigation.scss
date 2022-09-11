@@ -1,18 +1,37 @@
 .header {
+    position: relative;
     border-bottom: 1px solid #ECECEC;
 }
 .wrapper-nav {
     @extend .container;  
 }
-.nav {
 
-.navigation {
-   
+.menu-togglen{
+    display: inline-flex;
+    border: none;
+    background-color: transparent;
+}
+.icon-cross{
+    display: none;
+}
+.menu-toggle.is-open .icon-cross{
+display: block;
+}
+.menu-toggle.is-open .icon-menu{
+    display: none;
+}
+.menu-container.is-open {
+   position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: red;
 
-&__item:not(:last-child){
+}
+.navigation__item:not(:last-child){
     margin-right: 50px;
     }
-&__link {
+.navigation__link {
     position: relative;
     
     display: block;
@@ -30,10 +49,10 @@
     &:focus {
     color: $accentColor;
 }}
-&__link--current{
+.navigation__link--current{
     color: $accentColor;
 }
-&__link--current::after {
+.navigation__link--current::after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -45,5 +64,4 @@
     height: 4px;
     background: $accentColor;
     border-radius: 2px;
-}}
 }
