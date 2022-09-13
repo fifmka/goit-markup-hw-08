@@ -1,6 +1,16 @@
+.footer-form{
+    @media screen and (min-width: 1200px){
+        margin-left: auto;
+    }
+}
 .form-join{
     display: flex;
     flex-direction: column;
+    @media screen and (min-width: 1200px){
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 12px;
+    }
 }
 
 .footer-form__title {
@@ -14,8 +24,8 @@
     color: $whiteTextColor;
 }
 .form-label{
-    text-align: center;
-}
+    text-align: center;}
+
 .form-join__email {
 
     width: 100%;
@@ -34,6 +44,10 @@
     }
 @media screen and (min-width: 767px){
     max-width: 450px
+}
+@media screen and (min-width: 1200px) {
+    min-width: 358px;
+    margin-bottom: 0;
 }}
 
 .sing-button {

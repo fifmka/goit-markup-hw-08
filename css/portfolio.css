@@ -254,15 +254,17 @@ body.scroll-lock {
     width: 768px;
   }
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1140px;
   }
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 @media screen and (max-width: 480px) and (min-width: 768px) {
   .section {
@@ -397,6 +399,7 @@ body.scroll-lock {
   .navigation {
     display: flex;
     gap: 50px;
+    margin-left: 87px;
   }
 }
 
@@ -448,6 +451,13 @@ body.scroll-lock {
     margin-bottom: 0px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 @media screen and (min-width: 767px) {
   .contacts__item {
@@ -478,6 +488,13 @@ body.scroll-lock {
     color: #2196F3;
   }
 }
+@media screen and (min-width: 767px) {
+  .contacts__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .contacts__icon {
   margin-right: 10px;
@@ -493,7 +510,6 @@ body.scroll-lock {
 @media screen and (min-width: 767px) {
   .logo {
     font-size: 24px;
-    margin-right: 87px;
   }
 }
 
@@ -555,15 +571,24 @@ body.scroll-lock {
 
 .projects__item {
   width: 100%;
-  margin-bottom: 30px;
   transition: box-shadow 250ms cubic-bezier 0.4, 0, 0.2, 1;
 }
 .projects__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+@media screen and (max-width: 768px) {
+  .projects__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .projects__item {
     width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -619,8 +644,23 @@ body.scroll-lock {
   background-color: #2F303A;
 }
 
+.footer.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .footer__address {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    margin-right: 70px;
+  }
 }
 
 .wrapper-logo {
@@ -628,8 +668,27 @@ body.scroll-lock {
   font-size: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__content {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__contacts {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 .address {
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .address {
+    width: 232px;
+  }
 }
 
 .address__link {
@@ -693,9 +752,22 @@ body.scroll-lock {
   background-color: #2196F3;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    margin-left: auto;
+  }
+}
+
 .form-join {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 1200px) {
+  .form-join {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+  }
 }
 
 .footer-form__title {
@@ -731,6 +803,12 @@ body.scroll-lock {
 @media screen and (min-width: 767px) {
   .form-join__email {
     max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-join__email {
+    min-width: 358px;
+    margin-bottom: 0;
   }
 }
 

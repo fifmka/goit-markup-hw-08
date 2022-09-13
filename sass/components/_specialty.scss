@@ -3,13 +3,21 @@
   @media screen and (min-width: 768px) {
     display: flex;
     gap: 30px;
-      flex-wrap: wrap;
+    flex-wrap: wrap;
     }
+    @media screen and (min-width: 1200px){
+      flex-wrap: nowrap
+    }
+
 }
 .specialty__item{
   @media screen and (min-width: 768px) {
-  width: calc((100% - 30px)/2);}}
-.specialty__content {
+  width: calc((100% - 30px)/2);}
+@media screen and (min-width: 1200px){
+  width: calc((100% - 90px)/4);
+
+}}
+  .specialty__content {
     @extend %centeredFlex;
     width: 100%;
     margin-right: auto;
