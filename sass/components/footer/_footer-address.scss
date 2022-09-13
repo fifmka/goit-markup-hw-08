@@ -1,8 +1,10 @@
-.address {}
+.address {
+    text-align: center;
+}
 
 .address__link {
     display: inline-block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     color: $whiteTextColor;
     font-style: normal;
@@ -24,5 +26,5 @@
 
 .address-details__mail {
     display: inline-block;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
