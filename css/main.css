@@ -225,16 +225,22 @@ body.scroll-lock {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
     padding-bottom: 94px;
-  }
-}
-@media screen and (max-width: 480px) and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
@@ -296,6 +302,9 @@ body.scroll-lock {
   transform: translateX(100%);
   transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mobile-menu.is-open {
   transform: translateX(0);
@@ -316,23 +325,26 @@ body.scroll-lock {
     line-height: 47px;
     color: #212121;
     letter-spacing: 0.02em;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .navigation__link--active {
     color: #2196F3;
   }
   .navigation__link:hover, .navigation__link:focus {
     color: #2196F3;
+    transform: scaleX(0.95);
   }
 }
 @media screen and (min-width: 767px) {
   .navigation__link {
     position: relative;
     display: block;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #212121;
   }
   .navigation__link:hover, .navigation__link:focus {
@@ -343,6 +355,11 @@ body.scroll-lock {
 @media screen and (min-width: 767px) {
   .navigation__link--active {
     color: #2196F3;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navigation__link--active {
+    transform: scaleX(0.95);
   }
 }
 
@@ -360,11 +377,25 @@ body.scroll-lock {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
 @media screen and (min-width: 767px) {
   .navigation {
     display: flex;
     gap: 50px;
     margin-left: 87px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-mix {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -392,8 +423,6 @@ body.scroll-lock {
 }
 
 .soc-list {
-  position: absolute;
-  bottom: 48px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -429,10 +458,16 @@ body.scroll-lock {
 
 .contacts {
   margin-bottom: 64px;
+  display: flex;
+}
+@media screen and (max-width: 767px) {
+  .contacts {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 @media screen and (min-width: 767px) {
   .contacts {
-    display: flex;
     flex-direction: column;
     gap: 10px;
     margin-left: auto;
@@ -594,10 +629,14 @@ body.scroll-lock {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
   min-height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
+}
+@media screen and (max-width: 767px) {
+  .specialty__content {
+    margin-bottom: 30px;
+  }
 }
 
 .specialty__item:not(:last-child) {
@@ -697,19 +736,19 @@ body.scroll-lock {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
-}
 @media screen and (min-width: 768px) {
-  .team__item:not(:last-child) {
+  .team__item {
     width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .team__item:not(:last-child) {
+  .team__item {
     width: calc((100% - 90px) / 4);
   }
+}
+
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .member {
@@ -1026,11 +1065,23 @@ body.scroll-lock {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  max-width: 450px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 90%;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.8);
@@ -1039,6 +1090,7 @@ body.scroll-lock {
 .modal-button {
   position: absolute;
   right: 0;
+  top: 10px;
   margin-top: 8px;
   margin-right: 8px;
   width: 30px;
@@ -1055,9 +1107,6 @@ body.scroll-lock {
   fill: currentColor;
 }
 
-.order-form {
-  max-width: 450px;
-}
 .order-form__field {
   margin: 0;
   padding-left: 35px;

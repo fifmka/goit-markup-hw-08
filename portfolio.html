@@ -71,10 +71,10 @@
                 <nav>
                     <ul class="navigation">
                         <li class="navigation__item">
-                            <a href="./index.html" class="navigation__link navigation__link--active ">Студія</a>
+                            <a href="./index.html" class="navigation__link ">Студія</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
+                            <a href="./portfolio.html" class="navigation__link navigation__link--active ">Портфоліо</a>
                         </li>
                         <li class="navigation__item">
                             <a href="" class="navigation__link">Контакти</a>
@@ -118,11 +118,20 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
-                                    ./images/cl1-mob.jpg 1x,
-                                    ./images/cl1-mob2.jpg 2x
-                                    " 
-                                    src="./images/cl1-mob.jpg" class="projects__photo" alt="Веб-сайт Технокряк">
+                                <picture>
+                                    <source srcset="
+                                        ./images/cl1-mob.jpg 1x,
+                                        ./images/cl1-mob2.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="
+                                        ./images/cl1-tab.jpg 1x,
+                                        ./images/cl1-tab.jpg 2x
+                                        " media="(max-width: 1199px)">
+                                    <source srcset="
+                                        ./images/cl1-desc.jpg 1x,
+                                        ./images/cl1-deck.jpg 2x
+                                        " media="(min-width: 1200px)">
+                                    <img src="./images/cl1-mob.jpg" alt="Веб-сайт Технокряк">
+                                </picture>
                                     <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -137,11 +146,20 @@
                     <li class="projects__item">
                         <a href="" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
+                                <picture>
+                                    <source srcset="
                                         ./images/cl2-mob.jpg 1x,
-                                        ./images/cl2-mob2.jpg 2x
-                                        " 
-                                        src="./images/cl2-mob.jpg" class="projects__photo" alt="Постер з баскетболістами">
+                                        ./images/cl2-mob2.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="
+                                        ./images/cl2-tab.jpg 1x,
+                                        ./images/cl2-tab.jpg 2x
+                                        " media="(max-width: 1199px)">
+                                    <source srcset="
+                                        ./images/cl2-desc.jpg 1x,
+                                        ./images/cl2-deck.jpg 2x
+                                        " media="(min-width: 1200px)">
+                                    <img src="./images/cl2-mob.jpg" alt="Постер з баскетболістами">
+                                </picture>
                                     <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -156,12 +174,20 @@
                     <li class="projects__item">
                         <a href="" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
-                                    ./images/cl3-mob.jpg 1x,
-                                    ./images/cl3-mob3.jpg 2x
-                                    " 
-                                    src="./images/cl3-mob.jpg" class="projects__photo"
-                                    alt="Ресторан Seafood">
+                                <picture>
+                                    <source srcset="
+                                        ./images/cl3-mob.jpg 1x,
+                                        ./images/cl3-mob2.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="
+                                        ./images/cl3-tab.jpg 1x,
+                                        ./images/cl3-tab.jpg 2x
+                                        " media="(max-width: 1199px)">
+                                    <source srcset="
+                                        ./images/cl3-desc.jpg 1x,
+                                        ./images/cl3-deck.jpg 2x
+                                        " media="(min-width: 1200px)">
+                                    <img src="./images/cl3-mob.jpg" alt="Ресторан Seafood">
+                                </picture>
                                     <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -176,11 +202,20 @@
                     <li class="projects__item">
                         <a href="" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
-                                    ./images/cl4-mob.jpg 1x,
-                                    ./images/cl4-mob2.jpg 2x
-                                    " 
-                                    src="./images/cl4-mob.jpg" class="projects__photo" alt="Навушники">
+                                <picture>
+                                    <source srcset="
+                                     ./images/cl4-mob.jpg 1x,
+                                     ./images/cl4-mob2.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="
+                                     ./images/cl4-tab.jpg 1x,
+                                     ./images/cl4-tab.jpg 2x
+                                     " media="(max-width: 1199px)">
+                                    <source srcset="
+                                     ./images/cl4-desc.jpg 1x,
+                                     ./images/cl4-deck.jpg 2x
+                                         " media="(min-width: 1200px)">
+                                    <img src="./images/cl4-mob.jpg" alt="Навушники">
+                                </picture>
                                 <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -195,11 +230,20 @@
                     <li class="projects__item">
                         <a href="" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
-                                    ./images/cl5-mob.jpg 1x,
-                                    ./images/cl5-mob2.jpg 2x
-                                    " 
-                                    src="./images/cl5-mob.jpg" class="projects__photo" alt="Коробки">
+                                <picture>
+                                    <source srcset="
+                                        ./images/cl5-mob.jpg 1x,
+                                        ./images/cl5-mob2.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="
+                                        ./images/cl5-tab.jpg 1x,
+                                     ./images/cl5-tab.jpg 2x
+                                        " media="(max-width: 1199px)">
+                                    <source srcset="
+                                        ./images/cl5-desc.jpg 1x,
+                                        ./images/cl5-deck.jpg 2x
+                                         " media="(min-width: 1200px)">
+                                    <img src="./images/cl5-mob.jpg" alt="Коробки">
+                                </picture>
                                 <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.
@@ -214,11 +258,21 @@
                     <li class="projects__item">
                         <a href="" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
-                                    ./images/cl6-mob.jpg 1x,
-                                    ./images/cl6-mob2.jpg 2x
-                                    " 
-                                    src="./images/cl6-mob.jpg" class="projects__photo" alt="Комп`ютер з відкритою сторінкою сайту">
+                                <picture>
+                                    <source srcset="
+                                     ./images/cl6-mob.jpg 1x,
+                                     ./images/cl6-mob2.jpg 2x" 
+                                     media="(max-width: 767px)">
+                                    <source srcset="
+                                     ./images/cl6-tab.jpg 1x,
+                                     ./images/cl6-tab.jpg 2x
+                                     " media="(max-width: 1199px)">
+                                    <source srcset="
+                                     ./images/cl6-desc.jpg 1x,
+                                     ./images/cl6-deck.jpg 2x
+                                      " media="(min-width: 1200px)">
+                                    <img src="./images/cl6-mob.jpg" alt="Комп`ютер з відкритою сторінкою сайту">
+                                </picture>
                                 <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -233,13 +287,20 @@
                     <li class="projects__item">
                         <a href="" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
-                                    ./images/cl7-mob.jpg 1x,
-                                    ./images/cl7-mob2.jpg 2x
-                                    "
-                                    src="./images/cl7-mob.jpg" 
-                                    class="projects__photo"
-                                    alt="Відкрита книга">
+                                <picture>
+                                    <source srcset="
+                                     ./images/cl7-mob.jpg 1x,
+                                        ./images/cl7-mob2.jpg 2x" media="(max-width: 767px)">
+                                    <source srcset="
+                                        ./images/cl7-tab.jpg 1x,
+                                     ./images/cl7-tab.jpg 2x
+                                        " media="(max-width: 1199px)">
+                                    <source srcset="
+                                        ./images/cl7-desc.jpg 1x,
+                                        ./images/cl7-deck.jpg 2x
+                                         " media="(min-width: 1200px)">
+                                    <img src="./images/cl7-mob.jpg" alt="Відкрита книга">
+                                </picture>
                                 <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -254,12 +315,18 @@
                     <li class="projects__item">
                         <a href="" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
-                                    ./images/cl8-mob.jpg 1x,
-                                    ./images/cl8-mob2.jpg 2x
-                                    " src="./images/cl8-mob.jpg"
-                                    class="projects__photo"
-                                     alt="Візитівка">
+                                <source srcset="
+                                 ./images/cl8-mob.jpg 1x,
+                                       ./images/cl8-mob2.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="
+                                    ./images/cl8-tab.jpg 1x,
+                                 ./images/cl8-tab.jpg 2x
+                                       " media="(max-width: 1199px)">
+                                <source srcset="
+                                       ./images/cl8-desc.jpg 1x,
+                                       ./images/cl8-deck.jpg 2x
+                                        " media="(min-width: 1200px)">
+                                <img src="./images/cl8-mob.jpg" alt="Візитівка">
                                 <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                     дозволить відвідувачу отримати
                                     вичерпні відомості про компанію чи приватну особу.
@@ -274,13 +341,18 @@
                     <li class="projects__item">
                         <a href="" class="projects__link" target="_blank" rel="noopener noreferrer">
                             <div class="projects__thumb">
-                                <img srcset="
+                                <source srcset="
                                     ./images/cl9-mob.jpg 1x,
-                                    ./images/cl9-mob2.jpg 2x
-                                    "
-                                    src="./images/cl9-mob.jpg" 
-                                    class="projects__photo" 
-                                    alt="Ноутбук на столі">
+                                        ./images/cl9-mob2.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="
+                                    ./images/cl9-tab.jpg 1x,
+                                    ./images/cl9-tab.jpg 2x
+                                        " media="(max-width: 1199px)">
+                                <source srcset="
+                                         ./images/cl9-desc.jpg 1x,
+                                         ./images/cl9-deck.jpg 2x
+                                         " media="(min-width: 1200px)">
+                                <img src="./images/cl9-mob.jpg" alt="Ноутбук на столі">
                                 <p class="projects__description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це
                                 дозволить відвідувачу отримати
                                 вичерпні відомості про компанію чи приватну особу.

@@ -32,13 +32,13 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="contacts">
-            
+                <div class="contacts-mix">
+                    <ul class="contacts">
                     <li class="contacts__item--big">
                         <a href="tel:+380961111111" class="contacts__link contacts__link--big">
                             +38 096 111 11 11</a>
                     </li>
-                    <li class="-">
+                    <li class="contacts__item">
                         <a href="mailto:info@devstudio.com" class="contacts__link">
                             info@devstudio.com</a>
                     </li>
@@ -57,6 +57,8 @@
                         <a href="./index.html" class="soc-list__link">LinkedIn</a><span></span>
                     </li>
                 </ul>
+            </div>
+                
             </div>
             <button class="menu-button js-open-menu button-mobile" type="button" aria-expanded="false">
                 <svg width="40" height="40" aria-label="Перемикач мобільного меню">
@@ -161,7 +163,13 @@
                 <ul class="works__list">
                     <li class="works__item">
                         <div class="works__thumb">
-                            <img src="./images/type-work1.jpg" class="works__photo" alt="Людина набирає програмний код" width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                    ./images/box1-desc.jpg 1x,
+                                    ./images/box1-desc.jpg 2x" 
+                                    media="(min-width: 1200px)">
+                                <img src="./images/box1-desc.jpg" alt="Людина набирає програмний код">
+                            </picture>
                             <p class="works__text">Десктопні додатки</p>
                         </div>
                     </li>
@@ -186,15 +194,22 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__item">
-                        <img 
-                        srcset="
-                        ./images/dem-mob.jpg 1x,
-                        ./images/dem-mob2.jpg 2x
-                        "
-                        src="./images/dem-mob.jpg"
-                        class="team__photo"
-                        alt="Фото Ігоря Дем`яненка"
-                         >
+                        <picture>
+                            <source 
+                            srcset="
+                            ./images/dem-mob.jpg 1x,
+                            ./images/dem-mob2.jpg 2x"
+                            media="(max-width: 767px)">
+                            <source srcset="
+                            ./images/dem-tab.jpg 1x,
+                            ./images/dem-tab.jpg 2x
+                            " media="(max-width: 1199px)">
+                            <source srcset="
+                            ./images/dem-desc.jpg 1x,
+                            ./images/dem-deck.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <img src="./images/dem-mob.jpg" alt="Фото Ігоря Дем`яненка">
+                        </picture>
                         <div class="member">
                             <h3 class="member__title ">Ігор Дем'яненко</h3>
                             <p class="member__text" lang="en">Product Designer</p>
@@ -230,13 +245,21 @@
                             </li>
                         </ul>
                     <li class="team__item">
-                        <img srcset="
-                        ./images/rep-mob.jpg 1x,
-                        ./images/rep-mob2.jpg 2x
-                        "
-                        src="./images/rep-mob.jpg"
-                        class="team__photo"
-                        alt="Фото Ольги Рєпіної" >
+                        <picture>
+                            <source srcset="
+                            ./images/rep-mob.jpg 1x,
+                            ./images/rep-mob2.jpg 2x
+                            " media="(max-width: 767px)">
+                            <source srcset="
+                            ./images/rep-tab.jpg 1x,
+                            ./images/rep-tab2.jpg 2x
+                            " media="(max-width: 1199px)">
+                            <source srcset="
+                            ./images/rep-desc.jpg 1x,
+                            ./images/rep-desc2.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <img src="./images/rep-mob.jpg" alt="Фото Ольги Рєпіної">
+                        </picture>
                         <div class="member">
                             <h3 class="member__title">Ольга Рєпіна</h3>
                             <p class="member__text" lang="en">Frontend Developer</p>
@@ -273,14 +296,21 @@
                         </ul>  
                     </li>
                     <li class="team__item">
-                        <img srcset="
+                        <picture>
+                            <source srcset="
                             ./images/tar-mob.jpg 1x,
                             ./images/tar-mob2.jpg 2x
-                            "
-                            src="./images/tar-mob.jpg" 
-                            class="team__photo" 
-                            alt="Фото Миколи Тарасова">
-                       
+                            " media="(max-width: 767px)">
+                            <source srcset="
+                            ./images/tar-tab.jpg 1x,
+                            ./images/tar-tab2.jpg 2x
+                            " media="(max-width: 1199px)">
+                            <source srcset="
+                            ./images/tar-desc.jpg 1x,
+                            ./images/tar-desc2.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <img src="./images/tar-mob.jpg" alt="Фото Миколи Тарасова">
+                        </picture>
                         <div class="member">
                             <h3 class="member__title">Микола Тарасов</h3>
                             <p class="member__text" lang="en">Marketing</p>
@@ -317,8 +347,21 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img
-                            src="./images/erm-mob1.jpg" class="team__photo" alt="Фото Михайла Єрмакова">
+                        <picture>
+                            <source srcset="
+                            ./images/erm-mob.jpg 1x,
+                            ./images/erm-mob2.jpg 2x
+                            " media="(max-width: 767px)">
+                            <source srcset="
+                            ./images/erm-tab.jpg 1x,
+                            ./images/erm-tab2.jpg 2x
+                            " media="(max-width: 1199px)">
+                            <source srcset="
+                            ./images/erm-desc.jpg 1x,
+                            ./images/erm-desc2.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <img src="./images/erm-mob.jpg" alt="Фото Михайла Єрмакова">
+                        </picture>
                         <div class="member">
                             <h3 class="member__title">Михайло Єрмаков</h3>
                             <p class="member__text" lang="en">UI Designer</p>
