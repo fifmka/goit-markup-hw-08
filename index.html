@@ -12,7 +12,7 @@
     <header class="header">
         <div class="wrapper-nav container">
             <!-- Mobile menu -->
-            <a href="./index.html" class="logo">Web<span class="logo__accent">Studio</span></a>
+            <a href="./index.html" class="logo mobile-logo">Web<span class="logo__accent">Studio</span></a>
             <div class="mobile-menu container js-menu-container">
                 <button class="cross-button js-close-menu" type="button">
                     <svg width="40" height="40">
@@ -22,7 +22,7 @@
                 <nav>
                     <ul class="navigation">
                         <li class="navigation__item">
-                            <a href="./index.html" class="navigation__link navigation__link--active ">Студія</a>
+                            <a href="./index.html" class="navigation__link navigation__link--active">Студія</a>
                         </li>
                         <li class="navigation__item">
                             <a href="./portfolio.html" class="navigation__link">Портфоліо</a>
@@ -33,7 +33,7 @@
                     </ul>
                 </nav>
                 <ul class="contacts">
-                    
+            
                     <li class="contacts__item--big">
                         <a href="tel:+380961111111" class="contacts__link contacts__link--big">
                             +38 096 111 11 11</a>
@@ -58,13 +58,14 @@
                     </li>
                 </ul>
             </div>
-            <button class="menu-button js-open-menu" type="button" aria-expanded="false" >
+            <button class="menu-button js-open-menu button-mobile" type="button" aria-expanded="false">
                 <svg width="40" height="40" aria-label="Перемикач мобільного меню">
                     <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
                 </svg>
             </button>
             <!-- Desktop menu -->
-            <div class="desktop-menu">
+            <div class="desktop-menu container">
+                
                 <a href="./index.html" class="logo">Web<span class="logo__accent">Studio</span></a>
                 <nav>
                     <ul class="navigation">
@@ -316,11 +317,8 @@
                         </ul>
                     </li>
                     <li class="team__item">
-                        <img srcset="
-                            ./images/erm-mob.jpg 1x,
-                            ./images/erm-mob2.jpg 2x
-                            " 
-                            src="./images/erm-mob.jpg" class="team__photo" alt="Фото Михайла Єрмакова">
+                        <img
+                            src="./images/erm-mob1.jpg" class="team__photo" alt="Фото Михайла Єрмакова">
                         <div class="member">
                             <h3 class="member__title">Михайло Єрмаков</h3>
                             <p class="member__text" lang="en">UI Designer</p>
@@ -421,56 +419,58 @@
         <div class="container">
             <h2 class="visually-hidden">Контактні дані</h2>
             <div class="footer__contacts">
-                <div class="footer__address">
-                    <div class="wrapper-logo">
-                        <a href="#" class="logo footer-logo">Web<span class="logo footer-logo--accent">Studio</span></a>
+                <div class="footer__content">
+                    <div class="footer__address">
+                        <div class="wrapper-logo">
+                            <a href="#" class="logo footer-logo">Web<span class="logo footer-logo--accent">Studio</span></a>
+                        </div>
+                        <address class="address">
+                            <a href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
+                                class="address__link" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+                            <ul class="address-details">
+                                <li><a href="mailto:info@devstudio.com" class="address-details__mail">info@devstudio.com</a></li>
+                                <li><a href="tel:+380961111111" class="address-details__tel">+38 096 111 11 11</a></li>
+                            </ul>
+                        </address>
                     </div>
-                    <address class="address">
-                        <a href="https://www.google.com/maps/d/viewer?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ll=50.42732700000001%2C30.538092&z=17"
-                        class="address__link" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
-                        <ul class="address-details">
-                            <li><a href="mailto:info@devstudio.com" class="address-details__mail">info@devstudio.com</a></li>
-                            <li><a href="tel:+380961111111" class="address-details__tel">+38 096 111 11 11</a></li>
+                    <div class="networks footer-networks">
+                        <h3 class="footer-networks__title">приєднуйтесь</h3>
+                        <ul class="footer-networks__list">
+                            <li class="footer-networks__item">
+                                <a class="footer-networks__link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <svg class="footer-networks__svg" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-networks__item">
+                                <a class="footer-networks__link" href="#" target="_blank" rel="noopener noreferrer">
+                                    <svg class="footer-networks__svg" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-networks__item">
+                                <a class="footer-networks__link" href="" target="_blank" rel="noopener noreferrer">
+                                    <svg class="footer-networks__svg" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="footer-networks__item">
+                                <a class="footer-networks__link" href="" target="_blank" rel="noopener noreferrer">
+                                    <svg class="footer-networks__svg" width="20" height="20">
+                                        <use href="./images/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
                         </ul>
-                     </address>
-                </div>
-                <div class="networks footer-networks">
-                    <h3 class="footer-networks__title">приєднуйтесь</h3>
-                    <ul class="footer-networks__list">
-                        <li class="footer-networks__item">
-                            <a class="footer-networks__link" href="#" target="_blank" rel="noopener noreferrer">
-                                <svg class="footer-networks__svg" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-networks__item">
-                            <a class="footer-networks__link" href="#" target="_blank" rel="noopener noreferrer">
-                                <svg class="footer-networks__svg" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-networks__item">
-                            <a class="footer-networks__link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg class="footer-networks__svg" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-networks__item">
-                            <a class="footer-networks__link" href="" target="_blank" rel="noopener noreferrer">
-                                <svg class="footer-networks__svg" width="20" height="20">
-                                    <use href="./images/icons.svg#icon-linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
                 <div class="footer-form">
                     <h3 class="footer-form__title">підпишіться на розсилку</h3>
                     <form class="form-join" name="form-join" autocomplete="on">
-                        <label>
+                        <label class="form-label">
                             <input class="form-join__email" type="email" name="email" placeholder="E-mail"> 
                         </label>
                             <button class="button sing-button" type="submit">підписатися

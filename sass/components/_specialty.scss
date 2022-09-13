@@ -1,5 +1,15 @@
-
-    .specialty__content {
+.specialty__list{
+  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+      flex-wrap: wrap;
+    }
+}
+.specialty__item{
+  @media screen and (min-width: 768px) {
+  width: calc((100% - 30px)/2);}}
+.specialty__content {
     @extend %centeredFlex;
     width: 100%;
     margin-right: auto;
@@ -8,7 +18,9 @@
     min-height: 120px;
     border-radius: 4px;
     background-color: $additionalBgColor;
-  }
+    
+    }
+  
 
   .specialty__item:not(:last-child){
     margin-bottom: 30px;
