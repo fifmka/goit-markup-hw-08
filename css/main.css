@@ -629,14 +629,10 @@ body.scroll-lock {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 30px;
   min-height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
-}
-@media screen and (max-width: 767px) {
-  .specialty__content {
-    margin-bottom: 30px;
-  }
 }
 
 .specialty__item:not(:last-child) {
@@ -747,8 +743,10 @@ body.scroll-lock {
   }
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .member {
@@ -988,6 +986,11 @@ body.scroll-lock {
   text-align: center;
   color: #FFFFFF;
 }
+@media screen and (min-width: 1200px) {
+  .footer-form__title {
+    text-align: left;
+  }
+}
 
 .form-label {
   text-align: center;
@@ -1007,7 +1010,7 @@ body.scroll-lock {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: #FFFFFF;
 }
 @media screen and (min-width: 767px) {
   .form-join__email {

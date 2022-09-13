@@ -19,8 +19,11 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+   
     text-align: center ;
-
+@media screen and (min-width: 1200px){
+    text-align: left;
+}
     color: $whiteTextColor;
 }
 .form-label{
@@ -40,7 +43,7 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $whiteTextColor;
     }
 @media screen and (min-width: 767px){
     max-width: 450px

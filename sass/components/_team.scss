@@ -29,18 +29,20 @@ flex-wrap: wrap;
         }
         @media screen and (min-width: 1200px) {
             width: calc((100% - 90px)/4);
-        }
-    }
+        }}
+        // @media screen and (max-width: 767px) {
+        //     margin-bottom: 30px;}}
 
 .team__item:not(:last-child){
-    margin-bottom: 30px;}
-
-
+    @media screen and (max-width: 767px){
+        margin-bottom: 30px;
+        }
+    }
+//     margin-bottom: 30px;}
 
 .member {
     padding-top: 30px;
     padding-bottom: 16px;}
-
 
 .member__title {
     margin-bottom: 10px;
