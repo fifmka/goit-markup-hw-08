@@ -1,7 +1,13 @@
 .footer-form{
     @media screen and (min-width: 1200px){
         margin-left: auto;
+    
     }
+    @media screen and (min-width: 768px) {
+           display: flex;
+           flex-direction: column;
+           
+        }
 }
 .form-join{
     display: flex;
@@ -45,8 +51,11 @@
     letter-spacing: 0.03em;
     color: $whiteTextColor;
     }
+@media screen and (max-width: 480px){
+
+}
 @media screen and (min-width: 767px){
-    max-width: 450px
+    min-width: 450px
 }
 @media screen and (min-width: 1200px) {
     min-width: 358px;

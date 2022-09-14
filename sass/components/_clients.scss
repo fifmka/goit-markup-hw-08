@@ -6,6 +6,10 @@
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
+@media screen and (min-width: 768px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+        }
 }
 
 .clients__list {
@@ -30,7 +34,6 @@
 
 .clients__link {
     @extend %centeredFlex;
-    max-width: 170px;
     min-height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
